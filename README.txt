@@ -1,4 +1,4 @@
-DEAD SIGNAL — PLAY TEST 04
+DEAD SIGNAL — PLAY TEST 05
 
 Upload the extracted files (not the ZIP itself) to the publishing root of a GitHub Pages repository. index.html must be directly in that root. Keep all files together. Use a separate repository from The Last Ship.
 
@@ -16,6 +16,8 @@ Eight doors: yellow = unlocked, red = locked, green outline = open. Power unlock
 
 Reload, Map and Use respond immediately to touch-down, including while using the joystick. Accidental zoom gestures are suppressed. Death/pause panel is constrained to the screen.
 
-This is a basic-shape mechanics test. No detailed art, darkness or audio.
+Larger separate HEALTH and MAGAZINE readouts, including an empty-magazine warning and reload countdown. Small v0.5 indicator in the lower-left corner.
+
+This is a basic-shape mechanics test. No detailed art or audio. Torch cone and nearby ambient visibility are now enabled. Walls, solid obstacles and closed doors block light. Creatures only render in visible lit space. Map exploration follows what you can see.
 On iPad use Safari in landscape. Share > Add to Home Screen. Open online once before offline play.
-Version 4. All paths are relative for GitHub project Pages.
+Version 5 / displayed v0.5. All paths are relative for GitHub project Pages.
