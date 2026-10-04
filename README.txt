@@ -1,4 +1,4 @@
-DEAD SIGNAL — PLAY TEST 03
+DEAD SIGNAL — PLAY TEST 04
 
 Upload the extracted files (not the ZIP itself) to the publishing root of a GitHub Pages repository. index.html must be directly in that root. Keep all files together. Use a separate repository from The Last Ship.
 
@@ -7,13 +7,15 @@ Left stick: move and face in the direction pushed. Release to stop; facing stays
 Right FIRE: hold for continuous forward fire. 12 shots per magazine, unlimited reserve. Empty magazine requires manual reload.
 RELOAD: above FIRE; refill any partially used or empty magazine. Takes 1.5 seconds; movement stays enabled but shooting stops.
 MAP / CLOSE MAP: same button above left stick; explored rooms and corridors, player facing, current objective even if unexplored. Map pauses gameplay.
-USE: below FIRE; operate current amber objective when close.
+USE: below FIRE; open/close nearby doors or operate current amber objective when close. Doorways must be clear before closing.
 Keyboard: WASD/arrows, Space fire, E use, R reload, M map, Escape pause.
 
 MISSION
 Security > power > laboratory data > communications > extraction.
-Power unlocks containment. Twelve creatures, three hits each. Creatures pursue when nearby or when they hear shooting. Health 100; restart on death.
+Eight doors: yellow = unlocked, red = locked, green outline = open. Power unlocks the laboratory and containment; the laboratory grants the keycard for communications/service passage; communications unlocks extraction. Use doors manually. Sixteen solid obstacles block movement and shots; creatures navigate around them. Twelve creatures, three hits each. Creatures pursue when nearby or when they hear shooting. Health 100; restart on death.
+
+Reload, Map and Use respond immediately to touch-down, including while using the joystick. Accidental zoom gestures are suppressed. Death/pause panel is constrained to the screen.
 
 This is a basic-shape mechanics test. No detailed art, darkness or audio.
 On iPad use Safari in landscape. Share > Add to Home Screen. Open online once before offline play.
-Version 3. All paths are relative for GitHub project Pages.
+Version 4. All paths are relative for GitHub project Pages.
