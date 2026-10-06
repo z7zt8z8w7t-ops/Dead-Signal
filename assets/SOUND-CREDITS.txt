@@ -20,3 +20,7 @@ https://opengameart.org/content/100-cc0-sfx
 
 Switch: TinyWorlds, stove switch.
 https://opengameart.org/content/stove-switch
+
+Surface variants: carpet uses softened/filtered recorded stone steps; maintenance metal uses a short room resonance treatment; wet paving mixes recorded stone steps with rubberduck splash_02 (CC0, 100 CC0 SFX). These are adapted recordings, not recordings of each exact surface.
+
+v0.12: pistol-v12.wav is the same CC0 recorded Walther PPQ shot, shortened to its direct attack with additional low/mid weight. Runtime room-specific convolution adds early reflections and damped tails; outside has very little tail.
