@@ -1,13 +1,11 @@
-THE INVESTIGATION — GRAPHICS PLAYTEST v0.8
+THE INVESTIGATION / DEAD SIGNAL — COMPLETE v0.9 PLAY TEST
 
-Upload index.html, game.js and sw.js, plus the complete assets folder, into your existing GitHub Pages repository. Keep your manifest and icons. These are the only changed/new game files. The assets folder must stay beside index.html.
+This ZIP contains the entire playable PWA: index.html, game.js, sw.js, manifest, icons, all current artwork, recorded sounds and credits. No earlier ZIP is needed.
 
-Detailed textured reception furniture, stone floors, carpet, wet asphalt, glass doors, rain ripples, softened torch edges and emergency lights. UK police uniform; officer has near-shaved hair with thinning crown. Holstered/drawn sprites are separate static artwork with a subtle walking bob; a full gait/reload animation is not included in this visual test.
+Keep the directory structure: the four artwork PNGs and WAV files belong in assets/ beside the root files. To install on GitHub using the website, upload root files to main, then open/create assets and upload its contents there. Do not upload this ZIP itself as a game file or put the files inside an extra containing folder. If existing files have the same names, replace them.
 
-Left: MAP, joystick, DRAW/HOLSTER. Right: USE, FIRE, RELOAD. Starts outside in rain, pistol holstered. Find maintenance at the north end; USE the switch to toggle normal/emergency power. Vest light remains available; pistol torch appears when drawn. Glock17: 17 rounds, unlimited reserves, manual 1.5-second reload. No creatures or lockdown timers yet.
+Open the GitHub Pages URL. The small on-screen version should say v0.9. If an older installed PWA persists, fully close and reopen it after GitHub Pages has deployed.
 
-Bullets and flash originate at the muzzle; pistol beam starts at mounted torch. Solid doors, furniture and walls block light and shots.
+Left stick moves and faces. MAP above joystick opens and closes the explored map. DRAW / HOLSTER below joystick changes the Glock and torch. USE above FIRE opens doors and operates the power test switch in maintenance. RELOAD below FIRE takes 1.5 seconds and works before the magazine is empty. SOUND ON/OFF sits at lower right.
 
-Artwork made with built-in image generation: overhead UK officer in drawn/holstered poses, short stubble and balding crown; transparent corporate furniture atlas; porcelain/asphalt/steel/carpet surface atlas. Runtime crops transparent artwork and rotates sprites around body centre.
-
-Version at lower left must show v0.8. Close and reopen PWA if needed after deployment. Mechanics and canvas renders checked locally; iPad browser touch/performance testing still needed.
+This is a mechanics and lighting test with no creatures. The officer is a fixed overhead torso pose with animated steps, not a full skeletal character. Pistol firing uses a recorded 9mm stand-in for the Glock; source details are in assets/SOUND-CREDITS.txt.
