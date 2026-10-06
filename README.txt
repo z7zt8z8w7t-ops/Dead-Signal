@@ -1,23 +1,9 @@
-DEAD SIGNAL — PLAY TEST 06
+THE INVESTIGATION — VISUAL PLAYTEST v0.7
 
-Upload the extracted files (not the ZIP itself) to the publishing root of a GitHub Pages repository. index.html must be directly in that root. Keep all files together. Use a separate repository from The Last Ship.
+Replace only index.html, game.js and sw.js in your existing GitHub Pages repository. Keep your existing manifest and icons. README.txt is this update note.
 
-CONTROLS
-Left stick: move and face in the direction pushed. Release to stop; facing stays fixed.
-Right FIRE: hold for continuous forward fire. 12 shots per magazine, unlimited reserve. Empty magazine requires manual reload.
-RELOAD: above FIRE; refill any partially used or empty magazine. Takes 1.5 seconds; movement stays enabled but shooting stops.
-MAP / CLOSE MAP: same button above left stick; explored rooms and corridors, player facing, current objective even if unexplored. Map pauses gameplay.
-USE: below FIRE; open/close nearby doors or operate current amber objective when close. Doorways must be clear before closing.
-Keyboard: WASD/arrows, Space fire, E use, R reload, M map, Escape pause.
+Start outside in rain. USE opens the front entrance and corridor doors. Reach maintenance at the north end of the corridor; approach the green wall switch and press USE. It toggles normal/emergency power in both directions.
 
-MISSION
-Security > power > laboratory data > communications > extraction.
-Eight doors: yellow = unlocked, red = locked, green outline = open. Power unlocks the laboratory and containment; the laboratory grants the keycard for communications/service passage; communications unlocks extraction. Use doors manually. Sixteen solid obstacles block movement and shots; creatures navigate around them. Twelve creatures, three hits each. Creatures pursue when nearby or when they hear shooting. Health 100; restart on death.
+Left: MAP, joystick, DRAW/HOLSTER. Right: USE, FIRE, RELOAD. Starts holstered. Vest glow remains available; drawing enables pistol torch and firing. Glock: 17 rounds, unlimited reserves, manual 1.5-second reload. No enemies, timers or audio in this lighting test. Artwork is drawn in canvas; this is a visual prototype, not the generated storyboard graphics.
 
-Reload, Map and Use respond immediately to touch-down, including while using the joystick. Accidental zoom gestures are suppressed. Death/pause panel is constrained to the screen.
-
-Larger separate HEALTH and MAGAZINE readouts, including an empty-magazine warning and reload countdown. Small v0.6 indicator in the lower-left corner.
-
-This is a basic-shape mechanics test. No detailed art. Procedural prototype sounds: footsteps only while moving, forward gunfire, empty clicks, reload start/end, door motors, terminal confirmation and nearby creature noises. Creature/door/hit sounds use screen-relative stereo direction and distance attenuation, muffled through solid objects. Quiet fan/hum ambience. SOUND toggle at lower left, saved on this device. Sound starts on a user gesture; map, pause, background and end screens silence gameplay audio. No external audio downloads required. Torch cone and nearby ambient visibility are now enabled. Walls, solid obstacles and closed doors block light. Creatures only render in visible lit space. Map exploration follows what you can see.
-On iPad use Safari in landscape. Share > Add to Home Screen. Open online once before offline play.
-Version 6 / displayed v0.6. All paths are relative for GitHub project Pages.
+After deployment the bottom-left version should read v0.7. Fully close and reopen the PWA if it still shows the old screen.
