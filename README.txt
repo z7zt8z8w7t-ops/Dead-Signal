@@ -1,11 +1,27 @@
-THE INVESTIGATION / DEAD SIGNAL — COMPLETE v0.9 PLAY TEST
+DEAD SIGNAL - v0.10 FULL GAME
 
-This ZIP contains the entire playable PWA: index.html, game.js, sw.js, manifest, icons, all current artwork, recorded sounds and credits. No earlier ZIP is needed.
+Installation on GitHub Pages
+1. Extract this ZIP.
+2. Upload the root files to the main branch at the repository root, replacing the previous versions. Include index.html, game.js, sw.js, manifest.webmanifest and the three icon files.
+3. Open the assets folder in your repository and upload ALL files from the ZIP's assets folder into it. Keep the folder name exactly assets.
+4. Wait for GitHub Pages deployment, then reopen the game. The corner version should read v0.10.
 
-Keep the directory structure: the four artwork PNGs and WAV files belong in assets/ beside the root files. To install on GitHub using the website, upload root files to main, then open/create assets and upload its contents there. Do not upload this ZIP itself as a game file or put the files inside an extra containing folder. If existing files have the same names, replace them.
+This package contains the complete game and every required asset. Do not upload the ZIP itself as the game, and do not place all files inside another enclosing folder.
 
-Open the GitHub Pages URL. The small on-screen version should say v0.9. If an older installed PWA persists, fully close and reopen it after GitHub Pages has deployed.
+Changes
+- Dead Signal title on the start screen and installed app.
+- Furniture scaled to the officer.
+- Solid, visible room partitions with matching collision and torch occlusion.
+- Sliding doors with animated openings and collision matching their moving leaves.
+- Occupied doors refuse to close or reopen for the officer.
+- Version-specific officer artwork filenames prevent old character images being mixed with the new version.
+- All artwork and recorded sound effects included; attribution is in assets/SOUND-CREDITS.txt.
 
-Left stick moves and faces. MAP above joystick opens and closes the explored map. DRAW / HOLSTER below joystick changes the Glock and torch. USE above FIRE opens doors and operates the power test switch in maintenance. RELOAD below FIRE takes 1.5 seconds and works before the magazine is empty. SOUND ON/OFF sits at lower right.
+Controls
+Left joystick moves and faces the officer. MAP above it opens and closes the explored map; DRAW/HOLSTER below it changes weapon state.
+USE above FIRE operates nearby doors and the maintenance power test switch. Hold FIRE to shoot. RELOAD below FIRE starts a 1.5-second reload, including before the magazine is empty.
+Glock magazine: 17 rounds, unlimited reserve ammunition. No creatures in this lighting test.
+Start outside in the rain, enter reception and find the maintenance power test switch to see emergency lighting.
 
-This is a mechanics and lighting test with no creatures. The officer is a fixed overhead torso pose with animated steps, not a full skeletal character. Pistol firing uses a recorded 9mm stand-in for the Glock; source details are in assets/SOUND-CREDITS.txt.
+Validation
+Checked with real artwork in a canvas rendering harness: start, doors, walls, room access, reload, holster, power switch and explored map. An iPad/Safari play test is still needed.
