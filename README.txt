@@ -1,55 +1,64 @@
-DEAD SIGNAL — HOME MORNING PLAY TEST v0.15
+DEAD SIGNAL — HOME PLAY TEST v0.16
 
-UPDATE YOUR EXISTING GITHUB REPOSITORY
+UPDATE FROM THE EXISTING v0.15 HOME BUILD
+This ZIP contains changed files only: 5 root files and 12 new artwork files.
 Upload index.html, game.js, rooms.js, sw.js and README.txt into the repository root on main.
-Upload every file from this ZIP's assets folder INTO your existing assets folder.
-Keep your existing manifest.webmanifest, icon.svg, icon-192.png and icon-512.png.
-No assets need deleting. Old research-facility art may stay; this Home build does not load it.
-Wait for GitHub Pages to finish deploying, reopen the app and check v0.15 · Home.
-If it still shows an old version, fully close the Home Screen app, open the site in Safari once while online, then reopen it.
+Upload all 12 files from the ZIP's assets folder into your EXISTING assets folder.
+Keep your existing manifest.webmanifest, icons, WAV sound files,
+home-driveway-v15.webp and home-collie-v15.webp. Those unchanged files are not in this ZIP.
+No asset deletions are required. Do not empty the assets folder.
+After GitHub Pages deploys, reopen the app and check v0.16 · Home.
+If you still see an old version, fully close the Home Screen app, open the site online in Safari once,
+then close and reopen it. Offline use requires one successful online load of all new files first.
+
+WHAT CHANGED
+The two house floors follow the agreed contiguous layouts, using one scale: 100 world units per metre.
+The main house is 7.5 m wide by 9 m deep; the single-storey garage adds 3.5 m on the right.
+Room artwork contains detailed furniture. Shared walls and door openings are placed independently
+at exact coordinates, so adjacent rooms meet directly without connector corridors.
+The lounge doorway and downstairs WC doorway were shifted 0.2 m toward the front
+so Jim can pass their centres without overlapping the stairs or toilet.
+The garage doorway remains clear of the hall console.
+All internal doors are 0.9 m wide except the downstairs WC door, which is 0.8 m.
+Both stair footprints align between floors. The lower stair image is positioned separately.
+Jim now uses the approved directly overhead eight-frame walk in both outfits, with the stronger arm swing.
+The old torso and separate generated feet are no longer drawn. Character size and collision radius
+remain the same between dressed, towel and obscured wake-up states.
+Stairs activate when moving onto them in the appropriate direction; idle or sideways movement
+near the entrance does not change floors. No USE is required.
+Bella, the yellow Vivaro with two roof bars, audio and the morning story sequence are retained.
 
 PLAY SEQUENCE
-Move the joystick to get Jim out of bed. His lower body remains fully obscured.
-USE picks up the flashing white towel beside the bed.
-Open the bedroom door and bathroom door with USE. USE the shower from beside its entrance.
-The shower uses opaque blur/steam coverage. The towel is restored before that coverage clears.
-Return to the bedroom wardrobe and USE to dress in a black vest, jeans and flip-flops.
-Walk onto the stairs to descend automatically. A short fade changes floors; no USE required.
-USE breakfast beside the kitchen peninsula: health increases from 80 to 100.
-USE Emma's flashing note from beside the dining table. Read notes stop flashing but remain readable.
-Once dressed, fed and the note has been read, a phone reminder signals that it is time to leave.
-USE the pink front door or garage door, then approach the UK driver's side of the yellow Vivaro and USE.
-This play test ends with Jim leaving for the police station. It does not include the station or research facility yet.
+Move the joystick to wake and get out of bed. Jim's lower body is obscured.
+USE the flashing towel beside the bed, then open the bedroom and bathroom doors.
+Approach the shower entrance and USE; opaque steam covers the shower scene.
+Return to the bedroom wardrobe and USE to dress in the black vest, jeans and flip-flops.
+Walk onto the stairs to descend automatically with a short fade.
+USE breakfast from beside the peninsula to restore health from 80 to 100.
+Read Emma's flashing note on the dining table. Reading pauses the game.
+After breakfast, dressing and reading the note, the phone reminder signals time for work.
+USE the pink front door or garage vehicle door, then approach the driver's side of the Vivaro and USE.
+The play test ends with Jim leaving for the police station. The station and facility are not included yet.
 
 CONTROLS
-Left stick moves and faces the pushed direction. Right USE interacts.
-MAP above the stick opens/closes the current explored floor plan.
-Keyboard: WASD/arrows movement, E use, M map, Escape pause/close note.
-No gun controls are shown during the Home tutorial.
+Left joystick moves and faces that direction. Right USE interacts with nearby objects and doors.
+MAP above the joystick toggles the explored current-floor view.
+WASD/arrows move, E uses, M toggles map, Escape pauses/closes a note.
+Home has no weapon controls. Notes remain readable after collection; the flashing stops.
+Rooms are hidden until their connecting doors have opened, then stay discovered for this playthrough.
+Bella wanders the accessible ground floor, animates and can be petted; she cannot block Jim.
 
-HOME CATALOGUE
-rooms.js records each approved room's background, footprint, doors, furniture collision boxes,
-floor surface, item placement surfaces and separate accessible interaction positions.
-Rooms are linked using door connections. Furniture remains in the approved room artwork.
-Home's story note has a deliberate dining-table position. Item surfaces also reserve note/keycard locations for future areas.
-Ground-floor toilet is part of the approved entrance-hall module.
-The upstairs landing and downstairs hall have automatic staircase triggers, placed outside solid stairwell boundaries.
-Undiscovered rooms remain hidden until their connecting door opens. Previously discovered rooms stay visible.
-
-CHARACTERS
-Jim has identical render width/height and collision radius in his morning and dressed states.
-Generated feet that pointed backwards are excluded from the shipped torso assets.
-Feet are rendered separately with forward-facing toes and animated steps. Arm movement and idle breathing are animated.
-Bella is a border collie with animated paws, body movement and tail wag. She wanders accessible ground-floor rooms,
-occasionally follows Jim and can be petted with USE. She avoids closed doors and furniture; she cannot physically block Jim.
-
-AUDIO / GRAPHICS
-Room artwork uses the approved generated previews, converted to WebP without changing each image's aspect ratio.
-Recorded door and surface-adapted footstep samples are reused from the earlier play tests.
-Shower ambience and phone reminder are generated locally with Web Audio; no external audio service is required.
-All required Home assets are precached for offline Home Screen use after a successful online load.
+ROOM CATALOGUE
+rooms.js records room bounds, floor masks, doorway apertures, furniture collisions,
+surface types, item surfaces and accessible approach positions.
+The tutorial note stays on the dining table; future note/keycard placement surfaces are reserved.
+The downstairs toilet now has its own room/discovery and door collision.
+Wall thickness is 0.15 m. Rendered thresholds are feathered into the adjacent floor artwork.
 
 VALIDATION
-Local native-canvas rendering and game-state checks cover asset loading, collision routes, interaction reachability,
-all morning tasks, health increase, notes, stairs/no immediate return, van exit, map, pause and restart.
-Actual iPad/Safari touch behaviour and audio still require your device play test.
+Local native-canvas and game-state checks passed for all required artwork, every shared doorway,
+closed-door collisions, discovery, reachable task approaches, full morning progression,
+health/notes, stairs in both directions, avoiding accidental stair triggers, van exit,
+map, pause/restart, eight distinct gait frames and Bella's collision-safe movement.
+Both assembled floors were rendered and reviewed. ZIP entries are checked against source bytes.
+Actual iPad/Safari touch input, sound and Home Screen behaviour still need your device play test.
