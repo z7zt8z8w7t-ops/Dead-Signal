@@ -1,0 +1,22 @@
+All sources available under CC0. Trimmed, normalized and converted to mono 44.1kHz PCM WAV for iPad compatibility.
+
+Pistol: The Free Firearm Sound Library — Ben Jaszczak, Brian Nelson, Kevin Heras, Matthew Nanney. Walther PPQ X_31P (first shot).
+https://opengameart.org/content/the-free-firearm-sound-library
+
+Reload and holster handling: SpringySpringo, Gun reload sounds (recorded airsoft handling). Reload shortened to match 1.5 seconds; holster is a short handling excerpt.
+https://opengameart.org/content/gun-reload-sounds
+
+Footsteps: Fantozzi, Stone left/right variants.
+https://opengameart.org/content/fantozzis-footsteps-grasssand-stone
+
+Rain: alxl, Rain on Window Loop.
+https://opengameart.org/content/rain-on-window-loop
+
+Door open: themightyglider, derived from forseti1121.
+https://opengameart.org/content/iron-door
+
+Door close and power mechanism: rubberduck, 100 CC0 SFX.
+https://opengameart.org/content/100-cc0-sfx
+
+Switch: TinyWorlds, stove switch.
+https://opengameart.org/content/stove-switch
