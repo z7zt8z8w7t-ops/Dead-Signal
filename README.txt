@@ -1,20 +1,38 @@
-DEAD SIGNAL v0.12 UPDATE
+DEAD SIGNAL v0.13 - ATMOSPHERE LEVEL UPDATE
 
-Upload index.html, game.js, sw.js and README.txt to the root of main, replacing their previous versions.
-Upload ALL files from this ZIP's assets folder into your existing assets folder. Keep the other assets already there.
-The reception-room-v11.webp image is included again because it was missing from the earlier GitHub upload. It must be inside assets, not at the repository root.
-Wait for GitHub Pages deployment and reopen the game. Check the corner version reads v0.12.
+INSTALL
+Replace index.html, game.js, sw.js and README.txt in the root of main.
+Upload all NINE room-*-v13.webp images from this ZIP into your existing assets folder.
+Keep the other officer and audio files already there. Wait for GitHub Pages deployment, reopen and check v0.13 in the corner.
+The game will now report missing room images instead of silently showing older graphics.
 
-Changes
-- Officer is 30% larger, including feet and shadow.
-- Collision clearance and occupied-door protection match the larger officer.
-- Gun muzzle, bullets, weapon torch and vest light origins scale with him.
-- Pistol shot has a stronger direct attack and more low/mid weight.
-- Room-specific weapon reverberation: reception has the longest broad echo; corridors have shorter reflections; carpeted offices are muted; security and maintenance have their own responses; outside has very little tail.
-- Reverb buses are reused, and pause/mute clears their remaining tails. Output limiter controls peaks.
+ASSET CLEANUP
+No deletions are required.
+After v0.13 is working, these old assets are optional to remove because they are no longer used:
+furniture-atlas.png
+surface-atlas.png
+reception-room-v11.webp
+pistol.wav
+Keep officer-drawn-v10.png, officer-holstered-v10.png, pistol-v12.wav and all other current WAV files.
 
-The existing recorded shot remains the source; this update is not a new recording of an actual Glock. See assets/SOUND-CREDITS.txt.
-No creatures in this test. Controls and 17-round magazine remain unchanged. The emergency-light switch is on reception's west (left) wall.
+LEVEL
+Start outside in the rain and enter the clean reception. Use the paper beside the reception desk to read the visitor record.
+Head north into the office corridor. The west office contains her field notes. The east office contains the security key near its filing cabinet.
+Use the northern security door with the key. It leads to a filthy service passage, contaminated laboratory, service store and isolation room. Explore the blood trails and scattered remains under dark red flickering lighting.
+Both notes can be reread. Reading pauses the action; Close note or Escape returns to play.
+No living creatures in this atmosphere test. The reception west-wall power switch still toggles yellow emergency beacons in the clean wing. Red lighting in the contaminated wing remains active.
 
-Validation
-Real artwork rendered in a canvas harness. Larger-body routes, sliding doors, collision, barrel/torch offsets, reload, holster, map and lighting checks passed. Audio graph tests covered all six room profiles, shot routing, voice cleanup, mute and pause. Safari/iPad listening still needs a play test.
+VISUALS / CONTROLS
+Nine separate room/corridor/exterior images contain static walls, floors and furniture, with matching invisible barriers. The game draws only visible sections and no longer keeps an additional full-level background canvas. Artwork is loaded at start for this small test; nearby-only loading can be added for larger levels.
+Animated doors remain separate. Both torches have feathered angular edges and radial falloff; walls and furniture block them. Short glowing tracers briefly reveal nearby surfaces.
+Controls unchanged: left stick moves/faces, MAP above it, DRAW/HOLSTER below; USE above FIRE; RELOAD below. Glock 17, 17-round magazine, unlimited reserve, manual 1.5-second reload.
+Larger officer and room-dependent gunshot reverb retained.
+
+CHECKS
+Real-asset canvas render and mechanics harness checked locked-wing access, reachable notes/key, read/pause/close, unlocking/opening, body clearance to every room, atmosphere transition and red flicker, torch/tracer rendering, reload/holster/map, and reset. Needs iPad/Safari play testing.
+
+ARTWORK
+Built-in image-generation tool used for office and contaminated lab sources. Offline background baking makes the nine runtime modules; no source atlas is needed at runtime.
+Office prompt: detailed directly overhead carpeted corporate office; preserve supplied furniture and empty doorway footprints; walnut desks with computers and records, filing cabinet, neutral diffuse lighting.
+Lab prompt: detailed directly overhead abandoned bioscience laboratory; preserve supplied walls and empty door openings; stained equipment, concrete, blood trails, scattered remains and debris; neutral material lighting for dynamic red lights.
+The reception artwork and source sound credits are retained from earlier versions.
