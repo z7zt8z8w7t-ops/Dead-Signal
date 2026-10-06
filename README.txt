@@ -1,9 +1,13 @@
-THE INVESTIGATION — VISUAL PLAYTEST v0.7
+THE INVESTIGATION — GRAPHICS PLAYTEST v0.8
 
-Replace only index.html, game.js and sw.js in your existing GitHub Pages repository. Keep your existing manifest and icons. README.txt is this update note.
+Upload index.html, game.js and sw.js, plus the complete assets folder, into your existing GitHub Pages repository. Keep your manifest and icons. These are the only changed/new game files. The assets folder must stay beside index.html.
 
-Start outside in rain. USE opens the front entrance and corridor doors. Reach maintenance at the north end of the corridor; approach the green wall switch and press USE. It toggles normal/emergency power in both directions.
+Detailed textured reception furniture, stone floors, carpet, wet asphalt, glass doors, rain ripples, softened torch edges and emergency lights. UK police uniform; officer has near-shaved hair with thinning crown. Holstered/drawn sprites are separate static artwork with a subtle walking bob; a full gait/reload animation is not included in this visual test.
 
-Left: MAP, joystick, DRAW/HOLSTER. Right: USE, FIRE, RELOAD. Starts holstered. Vest glow remains available; drawing enables pistol torch and firing. Glock: 17 rounds, unlimited reserves, manual 1.5-second reload. No enemies, timers or audio in this lighting test. Artwork is drawn in canvas; this is a visual prototype, not the generated storyboard graphics.
+Left: MAP, joystick, DRAW/HOLSTER. Right: USE, FIRE, RELOAD. Starts outside in rain, pistol holstered. Find maintenance at the north end; USE the switch to toggle normal/emergency power. Vest light remains available; pistol torch appears when drawn. Glock17: 17 rounds, unlimited reserves, manual 1.5-second reload. No creatures or lockdown timers yet.
 
-After deployment the bottom-left version should read v0.7. Fully close and reopen the PWA if it still shows the old screen.
+Bullets and flash originate at the muzzle; pistol beam starts at mounted torch. Solid doors, furniture and walls block light and shots.
+
+Artwork made with built-in image generation: overhead UK officer in drawn/holstered poses, short stubble and balding crown; transparent corporate furniture atlas; porcelain/asphalt/steel/carpet surface atlas. Runtime crops transparent artwork and rotates sprites around body centre.
+
+Version at lower left must show v0.8. Close and reopen PWA if needed after deployment. Mechanics and canvas renders checked locally; iPad browser touch/performance testing still needed.
