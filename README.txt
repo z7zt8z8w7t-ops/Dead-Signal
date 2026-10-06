@@ -1,19 +1,20 @@
-DEAD SIGNAL v0.11 - CHANGED FILES
+DEAD SIGNAL v0.12 UPDATE
 
-Install over v0.10. This ZIP contains only files added or updated.
-Upload index.html, game.js, sw.js and README.txt to the repository root in main, replacing existing files.
-Upload EVERY file inside this ZIP's assets folder into your existing GitHub assets folder. Keep the other assets already there; do not delete them for this update.
-Wait for GitHub Pages deployment, then reopen the game. Check the corner says v0.11.
+Upload index.html, game.js, sw.js and README.txt to the root of main, replacing their previous versions.
+Upload ALL files from this ZIP's assets folder into your existing assets folder. Keep the other assets already there.
+The reception-room-v11.webp image is included again because it was missing from the earlier GitHub upload. It must be inside assets, not at the repository root.
+Wait for GitHub Pages deployment and reopen the game. Check the corner version reads v0.12.
 
-NEW RECEPTION TEST
-Reception floors, walls, desks, sofas, coffee table and plants are now contained in ONE detailed overhead background image. Invisible solid shapes match its wall and furniture footprints, blocking the officer, bullets and torchlight. Doors remain animated separately. The rest of the level retains its previous artwork.
-Start outside in the rain. Enter reception using USE by the entrance. Find the power test switch on reception's WEST (left) wall to toggle mains and emergency lighting. There are no creatures.
+Changes
+- Officer is 30% larger, including feet and shadow.
+- Collision clearance and occupied-door protection match the larger officer.
+- Gun muzzle, bullets, weapon torch and vest light origins scale with him.
+- Pistol shot has a stronger direct attack and more low/mid weight.
+- Room-specific weapon reverberation: reception has the longest broad echo; corridors have shorter reflections; carpeted offices are muted; security and maintenance have their own responses; outside has very little tail.
+- Reverb buses are reused, and pause/mute clears their remaining tails. Output limiter controls peaks.
 
-Wall-mounted yellow emergency beacons revolve, casting occluded light across floors and reflecting on walls and furniture. Carpet has a softer light wash than the stone floor. No beacons in the centre of rooms.
-Footsteps switch between stone, softened carpet, splashing wet paving, and a metallic maintenance treatment. These use adapted recordings; attribution in assets/SOUND-CREDITS.txt.
+The existing recorded shot remains the source; this update is not a new recording of an actual Glock. See assets/SOUND-CREDITS.txt.
+No creatures in this test. Controls and 17-round magazine remain unchanged. The emergency-light switch is on reception's west (left) wall.
 
-Controls remain the same: MAP above the left joystick; DRAW/HOLSTER below it; USE above FIRE on the right; RELOAD below FIRE. Manual 1.5-second reload, 17 rounds, unlimited reserve.
-
-Validation: real-asset canvas renders and mechanics checks passed for room access, collision, moving doors, light rays, power, holster/reload, map, rotating beams, wall-only beacons, surface selection and valid audio files. Still needs an iPad/Safari play test.
-
-Artwork generated with the built-in image-generation tool, then saved as assets/reception-room-v11.webp. Prompt: Transform the supplied overhead reception layout into a richly detailed, strictly orthographic research facility reception; preserve walls, empty door openings and furniture footprints; polished stone floor, walnut desk, petrol leather sofas, woven carpet, glass coffee table, plants and entrance mat; neutral diffuse lighting, soft contact shadows; no people, doors, lights, text or UI.
+Validation
+Real artwork rendered in a canvas harness. Larger-body routes, sliding doors, collision, barrel/torch offsets, reload, holster, map and lighting checks passed. Audio graph tests covered all six room profiles, shot routing, voice cleanup, mute and pause. Safari/iPad listening still needs a play test.
