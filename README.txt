@@ -1,27 +1,19 @@
-DEAD SIGNAL - v0.10 FULL GAME
+DEAD SIGNAL v0.11 - CHANGED FILES
 
-Installation on GitHub Pages
-1. Extract this ZIP.
-2. Upload the root files to the main branch at the repository root, replacing the previous versions. Include index.html, game.js, sw.js, manifest.webmanifest and the three icon files.
-3. Open the assets folder in your repository and upload ALL files from the ZIP's assets folder into it. Keep the folder name exactly assets.
-4. Wait for GitHub Pages deployment, then reopen the game. The corner version should read v0.10.
+Install over v0.10. This ZIP contains only files added or updated.
+Upload index.html, game.js, sw.js and README.txt to the repository root in main, replacing existing files.
+Upload EVERY file inside this ZIP's assets folder into your existing GitHub assets folder. Keep the other assets already there; do not delete them for this update.
+Wait for GitHub Pages deployment, then reopen the game. Check the corner says v0.11.
 
-This package contains the complete game and every required asset. Do not upload the ZIP itself as the game, and do not place all files inside another enclosing folder.
+NEW RECEPTION TEST
+Reception floors, walls, desks, sofas, coffee table and plants are now contained in ONE detailed overhead background image. Invisible solid shapes match its wall and furniture footprints, blocking the officer, bullets and torchlight. Doors remain animated separately. The rest of the level retains its previous artwork.
+Start outside in the rain. Enter reception using USE by the entrance. Find the power test switch on reception's WEST (left) wall to toggle mains and emergency lighting. There are no creatures.
 
-Changes
-- Dead Signal title on the start screen and installed app.
-- Furniture scaled to the officer.
-- Solid, visible room partitions with matching collision and torch occlusion.
-- Sliding doors with animated openings and collision matching their moving leaves.
-- Occupied doors refuse to close or reopen for the officer.
-- Version-specific officer artwork filenames prevent old character images being mixed with the new version.
-- All artwork and recorded sound effects included; attribution is in assets/SOUND-CREDITS.txt.
+Wall-mounted yellow emergency beacons revolve, casting occluded light across floors and reflecting on walls and furniture. Carpet has a softer light wash than the stone floor. No beacons in the centre of rooms.
+Footsteps switch between stone, softened carpet, splashing wet paving, and a metallic maintenance treatment. These use adapted recordings; attribution in assets/SOUND-CREDITS.txt.
 
-Controls
-Left joystick moves and faces the officer. MAP above it opens and closes the explored map; DRAW/HOLSTER below it changes weapon state.
-USE above FIRE operates nearby doors and the maintenance power test switch. Hold FIRE to shoot. RELOAD below FIRE starts a 1.5-second reload, including before the magazine is empty.
-Glock magazine: 17 rounds, unlimited reserve ammunition. No creatures in this lighting test.
-Start outside in the rain, enter reception and find the maintenance power test switch to see emergency lighting.
+Controls remain the same: MAP above the left joystick; DRAW/HOLSTER below it; USE above FIRE on the right; RELOAD below FIRE. Manual 1.5-second reload, 17 rounds, unlimited reserve.
 
-Validation
-Checked with real artwork in a canvas rendering harness: start, doors, walls, room access, reload, holster, power switch and explored map. An iPad/Safari play test is still needed.
+Validation: real-asset canvas renders and mechanics checks passed for room access, collision, moving doors, light rays, power, holster/reload, map, rotating beams, wall-only beacons, surface selection and valid audio files. Still needs an iPad/Safari play test.
+
+Artwork generated with the built-in image-generation tool, then saved as assets/reception-room-v11.webp. Prompt: Transform the supplied overhead reception layout into a richly detailed, strictly orthographic research facility reception; preserve walls, empty door openings and furniture footprints; polished stone floor, walnut desk, petrol leather sofas, woven carpet, glass coffee table, plants and entrance mat; neutral diffuse lighting, soft contact shadows; no people, doors, lights, text or UI.
